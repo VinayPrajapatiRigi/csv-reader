@@ -3,7 +3,7 @@
 
 Compare two CSV files using pandas
 
-# Project Description 
+# Project Description (Important Pandas function text generated using [ChatGPT](https://chat.openai.com/chat)) 
 * To compare two Excel sheets with different numbers of rows and find the differences using Python, you can use the pandas library. Pandas is a powerful tool for working with data in Python, and it makes it easy to work with Excel files. Here's an example of how you could compare two Excel sheets with different numbers of rows and find the differences using Python and pandas:
 
 * First, you'll need to install the pandas library if you don't already have it. You can do this by running pip install pandas at the command line.
@@ -19,6 +19,25 @@ df1 = pd.read_excel('sheet1.xlsx')
 # Load the second Excel sheet into a dataframe
 df2 = pd.read_excel('sheet2.xlsx')
 ```
+
+* Once you have the dataframes loaded, you can compare them to find the differences. One way to do this is to use the pandas.merge() function to merge the two dataframes on a common column, such as the primary key. For example:
+
+
+```python
+# Merge the two dataframes on the 'ID' column
+merged_df = pd.merge(df1, df2, on='ID')
+```
+
+* After merging the dataframes, you can compare the values in the columns to find the differences. One way to do this is to use the pandas.DataFrame.eq() method to compare the values in each column, and then use the pandas.DataFrame.any() method to find rows where the values are not equal. For example:
+
+```python
+# Compare the values in each column
+differences = merged_df.eq(df1, axis=0)
+
+# Find rows where the values are not equal
+differences = differences[differences.any(axis=1)]
+```
+
 
 
 
