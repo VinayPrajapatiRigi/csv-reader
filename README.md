@@ -70,7 +70,9 @@ Go to the project directory
 
 Install dependencies
 
-
+```bash
+pip3 install pandas
+```
 
 ## Libraries used to create CSV Comparator 
 
