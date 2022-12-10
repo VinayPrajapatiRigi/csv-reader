@@ -4,7 +4,7 @@
 Compare two CSV files using pandas
 
 # Important Pandas Function you should know before using this function
-## (Important Pandas function using [ChatGPT](https://chat.openai.com/chat)) to generate below text.
+## (Used [ChatGPT](https://chat.openai.com/chat)) to generate below text.
 * To compare two Excel sheets with different numbers of rows and find the differences using Python, you can use the pandas library. Pandas is a powerful tool for working with data in Python, and it makes it easy to work with Excel files. Here's an example of how you could compare two Excel sheets with different numbers of rows and find the differences using Python and pandas:
 
 * First, you'll need to install the pandas library if you don't already have it. You can do this by running pip install pandas at the command line.
