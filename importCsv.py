@@ -21,7 +21,7 @@ for i in fileone:
     if i != filetwo[x]:
 
         outFile.write(filetwo[x])
-
+        print(filetwo[x])
     x += 1
 
 outFile.close()
